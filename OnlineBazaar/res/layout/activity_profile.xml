@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:padding="20dp"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="Edit Details"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/firstName"
+            android:paddingTop="10dip"
+            android:text="First Name" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView03"
+            android:layout_centerHorizontal="true"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstName"
+            android:layout_alignLeft="@+id/lastName"
+            android:paddingTop="10dip"
+            android:text="Last Name" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView04"
+            android:layout_centerHorizontal="true"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastName"
+            android:layout_alignLeft="@+id/phoneNumber"
+            android:paddingTop="10dip"
+            android:text="Phone Number" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView05"
+            android:layout_centerHorizontal="true"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingTop="10dip" />
+
+        <Button
+            android:id="@+id/btnEditDetais"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneNumber"
+            android:layout_marginTop="20dip"
+            android:text="Save Changes" />
+        
+    </RelativeLayout>
+
+</ScrollView>

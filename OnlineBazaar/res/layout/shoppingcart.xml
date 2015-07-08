@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:text="Shopping Cart"
+        android:textColor="#000000"
+        android:textSize="24dip" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:text="Click on a product to edit the quantity" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/ListViewCatalog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:choiceMode="multipleChoice"
+        android:clickable="true" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/CheckOutBlock"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+           
+        <ImageButton
+            android:id="@+id/btnCheckout"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cart" >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/footerSubTotalAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnCheckout"
+            android:layout_toRightOf="@+id/btnCheckout"
+            android:text="Sub Total: USD "
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/footerDiscountAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footerSubTotalAfter"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/btnCheckout"
+            android:text="Discount: USD "
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/footerShipmentAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footerDiscountAfter"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/btnCheckout"
+            android:text="Shipment: Not Calculated"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/footerTotalAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footerShipmentAfter"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/btnCheckout"
+            android:text="Total: USD "
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+    
+  <RelativeLayout
+        android:id="@+id/ShipmentBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+        
+        <TextView
+            android:id="@+id/footerSubTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Sub Total: USD 80.00"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/footerDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footerSubTotal"
+            android:layout_marginTop="5dp"
+            android:text="Discount: USD "
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/footerShipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footerDiscount"
+            android:layout_marginTop="5dp"
+            android:text="Shipment: Not Calculated"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/footerTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footerShipment"
+            android:layout_marginTop="5dp"
+            android:text="Total: USD"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        
+        <Button 
+            android:id="@+id/btnShipment"
+            android:text="Shipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footerTotal"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

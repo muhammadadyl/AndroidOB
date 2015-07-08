@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/footerImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/footerSubTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/footerImage"
+        android:layout_toRightOf="@+id/footerImage"
+        android:text="Sub Total: USD 80.00"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/footerDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/footerSubTotal"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/footerImage"
+        android:text="Discount: USD 20.00 "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/footerTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/footerDiscount"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/footerImage"
+        android:text="Total: USD 60.00"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

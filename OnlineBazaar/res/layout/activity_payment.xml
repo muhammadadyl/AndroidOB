@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:text="Credit Card Details"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:text="Total Amount" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:enabled="false"
+            android:hint="Amount"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:text="Name On Card" />
+
+        <EditText
+            android:id="@+id/edtNameOnCard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:hint="Name On Card"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:text="Card Number" />
+
+        <EditText
+            android:id="@+id/edtCardNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:hint="Card Number"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:text="SecurityCode" />
+
+        <EditText
+            android:id="@+id/edtSecurityCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:hint="SecurityCode"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:text="Expiration Date" />
+
+        <EditText
+            android:id="@+id/dpExpireDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select A Date"
+            android:inputType="date" />
+
+        <CheckBox
+            android:id="@+id/chkConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="I have read and understood that this purchase will appear on my credit card as &apos;Online Bazaar Inc.&apos;" />
+
+        <Button
+            android:id="@+id/btnCC"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:text="Proceed" />
+    </LinearLayout>
+
+</ScrollView>

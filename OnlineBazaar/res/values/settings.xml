@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_Authorize_arrays">
+        <item>Sign Out</item>
+        <item>Edit Profile</item>
+        <item>Order History</item>
+        <item>About</item>
+    </string-array>
+    <string-array name="settings_UnAuthorize_arrays">
+        <item>Sign In / Register</item>
+        <item>About</item>
+    </string-array>
+</resources>

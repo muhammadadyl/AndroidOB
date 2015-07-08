@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:padding="20dp"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="Please Login Or Register"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dip"
+            android:layout_alignLeft="@+id/username"
+            android:text="Email Address" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_alignLeft="@+id/password"
+            android:paddingTop="10dip"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView01"
+            android:layout_centerHorizontal="true"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_alignLeft="@+id/confirmPassword"
+            android:paddingTop="10dip"
+            android:text="Confirm Password" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView02"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmPassword"
+            android:layout_alignLeft="@+id/firstName"
+            android:paddingTop="10dip"
+            android:text="First Name" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView03"
+            android:layout_centerHorizontal="true"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstName"
+            android:layout_alignLeft="@+id/lastName"
+            android:paddingTop="10dip"
+            android:text="Last Name" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView04"
+            android:layout_centerHorizontal="true"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastName"
+            android:layout_alignLeft="@+id/phoneNumber"
+            android:paddingTop="10dip"
+            android:text="Phone Number" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView05"
+            android:layout_centerHorizontal="true"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingTop="10dip" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneNumber"
+            android:layout_marginTop="20dip"
+            android:text="Register" />
+        
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRegister"
+            android:layout_marginTop="20dip"
+            android:text="Login" />
+        
+    </RelativeLayout>
+
+</ScrollView>

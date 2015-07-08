@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Billing Details"
+        android:paddingBottom="10dip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone No."
+        android:paddingLeft="10dip"
+        />
+    
+    <EditText 
+        android:id="@+id/edtPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone No."
+        android:layout_marginTop="10dip"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:paddingLeft="10dip"
+        />
+    
+    <EditText 
+        android:id="@+id/edtAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Address"
+        android:layout_marginTop="10dip"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:paddingLeft="10dip"
+        />
+    
+    <EditText 
+        android:id="@+id/edtCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="City"
+        android:layout_marginTop="10dip"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:paddingLeft="10dip"
+        />
+    
+    <EditText 
+        android:id="@+id/edtState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="State"
+        android:layout_marginTop="10dip"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Zip Code/ Postal Address"
+        android:paddingLeft="10dip"
+        />
+    
+    <EditText 
+        android:id="@+id/edtPostal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:hint="Zip Code / Postal Address"
+        android:layout_marginTop="10dip"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:paddingLeft="10dip"
+        />
+    
+    <Spinner 
+        android:id="@+id/spCountry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:entries="@array/country"/>
+
+    <CheckBox
+        android:id="@+id/chkDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Billing Address Default" />
+
+    <Button
+        android:id="@+id/btnShip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:text="Proceed" />
+    
+    </LinearLayout>
+    
+</ScrollView>

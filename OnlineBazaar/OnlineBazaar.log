@@ -1,0 +1,5 @@
+javaToKdm executed in 65.36s.
+Cannot overload Ecore
+Invalid implements, from : kdmInput!Anonymous type
+to : kdmInput!OnFinishDeleteEvent
+KDMtoUML executed in 4.946s.

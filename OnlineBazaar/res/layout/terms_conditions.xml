@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.08"
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:text="Terms and Condition"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/wvTermsAndConditions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dip" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes I Accept" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="104dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="#ffcccccc" />
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listImage"
+        android:layout_toRightOf="@+id/listImage"
+        android:text="A List item title"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/listPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listTitle"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/listImage"
+        android:text="USD 40.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listPrice"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/listImage"
+        android:text="Quantity"
+        android:textSize="14sp"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/listTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listQuantity"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/listImage"
+        android:text="40.00 X 2 = 80.00"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/deleteView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listQuantity"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_delete"
+        android:text="Delete Item" 
+        android:visibility="gone"/>
+
+</RelativeLayout>
